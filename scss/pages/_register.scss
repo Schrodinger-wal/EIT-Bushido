@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Roboto&display=swap');
+
+.body__register {
+    font-size: 16px;
+    background: rgb(10,16,37);
+    background-image: url(/Assets/banners/African-titulo.png);
+font-family: Helvetica, "Roboto", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+
+/* =====================================Inicio del formulario============================== */
+
+
+
+.title__formulary{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 25px;
+    border-bottom: $color-bg-secondary 1px thick;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.section__formulary {
+    display: flex;
+    justify-content: center;
+}
+
+.form__register {
+    width: 350px;
+    background: #222222;
+    padding: 30px;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 0px 5px 20px 7px #000;
+    margin-bottom: 40px;
+}
+
+.div-input__section {
+    width: auto;
+    padding: 15px 0px;
+    margin: auto;
+    color: white;
+}
+
+.label-formulary {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register__subtitle--h2 {
+    color: #c21531; 
+    text-align: center;
+    margin-top: 4px;
+}
+
+.input-formulary, .lista-paises {
+	padding: 10px;
+	border: 1px solid rgb(6, 6, 6);
+	border-radius: 5px;
+	outline: none;
+	width: 95%;
+} 
+
+::-webkit-input-placeholder {
+	color: rgb(136, 136, 136);	
+}
+
+.formulary__genre-div {
+    width: 300px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    display:flex;
+}
+
+
+.formulary-conditions__input {
+    width: 10%;
+}
+
+.btn{
+    background-color: $color-bg-secondary;
+    padding: 10px;
+    border: none;
+    margin: 20px 15px 20px 10px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.alert-dialog {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-bg-primary;
+    padding: 2rem 3rem;
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition:  visibility linear 0.5s, opacity 0.5s linear;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+/* =====================================Fin del formulario============================== */
+
+
+@media only screen and (min-width: 768px) {
+    /* para desktop */
+    .form-register {
+        width: 500px;
+    }
+    .btn {
+        margin-left: 15px;
+    }
+    }

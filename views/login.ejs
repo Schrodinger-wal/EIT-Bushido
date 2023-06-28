@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', {tabTitle: 'Login'}) %>
+
+<body>
+        <!-- ============ Empieza Navbar ================== -->
+
+    <%- include('partials/header') %>
+
+        <!-- =============== Termina Navbar ============= -->
+
+
+        <!-- ================LOGIN================= -->
+
+<main class="main__login">
+    <div class="container__login">
+        <h1 class="title-login">Login</h1>
+        <form class="" id="loginForm">
+            <div class="input__login">
+                <label class="login-label" for="email">Email:</label>
+                <input class="login-input" type="emai" name="email" id="email" value="waltermayer@outlook.es" required>
+        </div>
+
+            <div class="input__login">
+                <label class="login-label" for="password">Contraseña:</label>
+                <input class="login-input" type="password" id="password" name="password" value="wal" required>
+            </div>
+
+            <button type="submit" id="loginBtn" class="login__btn">Ingresar</button>
+        </form>
+    </div>
+</main>
+
+<!-- ====================Login===================== -->
+
+<!-- ================ Inicio Footer ====================== -->
+
+<%- include('partials/footer') %>
+
+<!-- ================ Termina Footer ====================== -->
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="/js/funcionality/URL.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+<script src="/js/funcionality/alert.js"></script>
+<script src="/js/funcionality/header.js"></script>
+<script src="/js/auth/login.js"></script>
+<script src="/js/auth/register.js"></script>
+
+</body>
+
+</html>

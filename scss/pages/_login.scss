@@ -1,0 +1,62 @@
+
+/* Estilos para el contenedor principal */
+.main__login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+
+/* Estilos para el contenedor del formulario */
+.container__login {
+  background-color: #fff;
+  padding: 80px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.title-login {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilos para los campos de entrada */
+.input__login {
+  margin-bottom: 20px;
+}
+
+.login-label {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilos para el botón de ingresar */
+.login__btn {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #8b0000; /* Color principal bordó */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login__btn:hover {
+  background-color: #6a0000; /* Color bordó más oscuro al pasar el cursor */
+}

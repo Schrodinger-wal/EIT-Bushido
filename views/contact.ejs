@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head', {tabTitle: 'Contacto'}) %>
+
+<body>
+
+<!-- ===========Inicio navbar============== -->
+
+<%- include('partials/header') %>
+
+<!-- ==========Fin navbar================= -->
+
+<!-- ========================================== Inicio contact ======================================== -->
+
+
+        
+<div class="admin__title-container">
+    <h1 class="section-cards__title">
+        Contactanos
+    </h1>
+</div>
+        <section class="contact-form__section">
+                <div class="contact-form__container">
+                    <form action="">
+                        <div>
+                            <label class="contact-form__label" for="idInputName">Nombre</label><br>
+                            <input class="contact-form__input" type="text" name="name" id="idInputName" placeholder="Nombre completo" required maxlength="40" minlength="8" size="50" autofocus autocomplete="on">
+                        </div>
+                        <div>
+                            <label class="contact-form__label for="emailInput">Email</label> <br>
+                            <input class="contact-form__input" type="email" name="email" id="emailInput" required placeholder="Email" minlength="8" maxlength="45" pattern="pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        </div>
+                        <div>
+                            <label class="contact-form__label for="observation">Consulta</label>
+                            <textarea class="contact-form__textarea" name="description" id="" cols="60" rows="10" placeholder="..." ></textarea>
+                            
+                        </div>
+                        <button class="btn" type="submit">Enviar</button>
+                    </form>
+<!--                 <h4>Visitanos!</h4> -->
+                <iframe class="contact-form__map" " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5518.777529898712!2d-58.55651410850061!3d-34.66771316049732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62acad68b41%3A0x56be511fb28e0b95!2sBer%C3%B3n%20de%20Astrada%202758%2C%20B1704DHZ%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1675210714408!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+        </section>
+    
+<!-- ==========================================Fin contact======================================== -->
+
+
+
+<!-- ========================== Inicio Footer =============================== -->
+<%- include('partials/footer') %>
+<!-- ========================== Fin Footer =============================== -->
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="/js/funcionality/URL.js"></script>
+<script src="/js/funcionality/header.js"></script>
+
+</body>
+</html>

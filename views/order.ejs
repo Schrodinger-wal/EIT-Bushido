@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', {tabTitle: 'Orden'}) %>
+
+<body>
+
+    <%- include('partials/header') %>
+
+
+
+
+<section>
+    <div class="admin__title-container">
+        <h1 class="section-cards__title">
+            Mi carrito
+        </h1>
+    </div>
+        
+        <div class="order__container">
+            <table class="admin-product__table">
+                <thead>
+                    <tr class="admin-product__td">
+                        <td class="admin-product__td">Imagen</td>
+                        <td class="admin-product__td">Producto</td>
+                        <td class="admin-product__td">Precio</td>
+                        <td class="admin-product__td">Cantidad</td>
+                        <td class="admin-product__td">Total</td>
+                    </tr>
+                </thead>
+                    <tbody id="tbody"></tbody>
+            </table> 
+            <div class="order__container--btn">
+                <button class="admin-product__btn" id="order-btn" onclick="RealizarCompra()">
+                    Finalizar compra
+                </button>
+            </div>
+        </div>
+</section>
+
+
+
+
+<!-- ========================== Inicio Footer =============================== -->
+
+<%- include('partials/footer') %>
+
+<!-- ========================== Final Footer =============================== -->
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="/js/funcionality/URL.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="/js/funcionality/alert.js"></script>
+    <script src="/js/products/order.js"></script>
+    <script src="/js/funcionality/header.js"></script>
+</body>
+</html>

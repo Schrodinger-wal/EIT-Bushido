@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head', {tabTitle: 'Bushido'}) %>
+
+<!-- ============== Empieza Navbar ===================== -->
+
+<%- include('partials/header') %>
+
+<!-- ============================= Termina Navbar ================================= -->
+
+<main class="main">
+
+<!-- ================================ EMPIEZAN LAS CARDS ====================================================== -->
+
+    <section class="section-cards">
+        <header class="section-cards__header">
+            <div class="section-cards__title-container">
+                <h1 class="section-cards__title">
+                    Ropa sin genero <br> Diseñado para luchadores natos
+                </h1>
+                <p class="section-cards__subtitle">
+                    <br>
+                    Preparate para el campo de batalla de la mejor forma
+                    <br>
+                    "Wear the streets, own the scene."
+                </p>
+            </div>
+
+            <div class="section-cards__products-search-container">
+                <div class="product-search">
+
+                    <label for="" class="product-search__label">Buscar</label>
+
+                    <input type="text" class="product-search__input" id="filter" onchange="filtrarProductos(event)">
+
+                    <button class="product-search__btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <div class="section-cards__products-count" id="products-count">
+                </div>
+            </div>
+
+        </header>
+        <!--==================== Maquetado de las Cards ======================-->
+
+
+        <div class="cards-container" id="card-container">
+
+</main>
+</section>
+<!--==================== Fin Maquetado de las Cards ======================-->
+
+
+<!-- ========================== Inicio Footer =============================== -->
+
+<%- include('partials/footer') %>
+
+<!-- ========================== Final Footer =============================== -->
+<link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+<script src="/js/funcionality/URL.js"></script>
+<script src="/js/funcionality/alert.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/js/products/order.js"></script>
+<script src="/js/funcionality/index.js"></script>
+<script src="/js/funcionality/header.js"></script>
+<script src="/js/funcionality/avatar.js"></script>
+
+
+</body>
+
+</html>

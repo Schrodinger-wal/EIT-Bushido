@@ -1,0 +1,257 @@
+/* Section Styles */
+
+.admin-product__section-product {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Form Styles */
+  
+  .admin-product__form {
+    padding: 2rem;
+    background-color: rgb(255, 255, 251);
+    color: #b1260d;
+    font-size: 1.5rem;
+  }
+  
+  .admin-product__form h1 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+  }
+  
+  .admin-product__div--product {
+    margin-bottom: 1rem;
+  }
+  
+  .admin-product__label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .admin-product__input,
+  .admin-product__textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .admin-product__input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: beige;
+  }
+  
+  .admin-product__btn {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 100%;
+    background-color: #5a5a5a;
+    border: none;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+  }
+  
+  .admin-product__btn:hover {
+    background-color: #b1260d;
+    color: #494949;
+  }
+  
+  /* Table Styles */
+  
+  .admin-product__table-div {
+    overflow-x: auto;
+    background-color: rgb(250, 250, 250);
+  }
+  
+  .admin-product__table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(250, 250, 250);
+
+  }
+  
+  .admin-product__td,
+  .admin-product__th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  
+  .admin-product__th {
+    background-color: #f2f2f2;
+  }
+  
+  .product__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .product__name {
+    font-weight: bold;
+  }
+  
+  .product__desc {
+    color: #666;
+  }
+  
+  .product__price {
+    font-weight: bold;
+    color: #008000;
+  }
+  
+  .product__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product__action-btn {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 6px;
+  }
+  
+  .product__action-btn:last-child {
+    margin-right: 0;
+  }
+  
+  .btn-edit {
+    background-color: #007bff;
+  }
+  
+  textarea#desArea {
+    width: 100%;
+}
+
+  @media (max-width: 768px) {
+    .admin-product__table-div {
+      overflow-x: scroll;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .admin-product__table {
+      display: block;
+      width: auto;
+      border: none;
+    }
+  
+    .admin-product__th {
+      font-size: 14px;
+    }
+  
+    .admin-product__td,
+    .admin-product__th {
+      border-bottom: 1px solid black;
+      border-right: none;
+    }
+  
+    .admin-product__td:last-child,
+    .admin-product__th:last-child {
+      border-right: 1px solid black;
+    }
+  
+    .product__img-cell {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 100px;
+    }
+  
+    .product__img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product__name,
+    .product__desc,
+    .product__price,
+    .product__actions {
+      width: 100%;
+      padding: 6px;
+      text-align: center;
+    }
+  
+    .product__name {
+      font-weight: bold;
+      font-size: 14px;
+    }
+  
+    .product__desc {
+      color: #666;
+      font-size: 12px;
+      text-align: center;
+    }
+  
+    .product__price {
+      font-weight: bold;
+      color: #008000;
+      font-size: 14px;
+    }
+  
+    .product__actions {
+      justify-content: center;
+    }
+  
+    .product__action-btn {
+      margin-top: 6px;
+      margin-right: 6px;
+    }
+  
+    .product__action-btn:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  tr {
+    border-bottom: 1px solid black;
+  }
+
+  .textarea-container {
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .textarea-container textarea {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+  }
+  
+  @media (max-width: 768px) {
+    .textarea-container {
+      max-width: 200px;
+      padding: 0 20px;
+      width: 100px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .admin-product__form {
+      padding: 2rem;
+      background-color: rgb(255, 255, 251);
+      color: #b1260d;
+      font-size: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+  }
+  }

@@ -1,0 +1,24 @@
+@import "abstracts/variables";
+@import "abstracts/utilities";
+
+@import "base/reset";
+
+@import "components/card";
+@import "components/alert-dialog";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/register";
+@import "pages/home";
+@import "pages/contact";
+@import "pages/about-us";
+@import "pages/admin-product";
+@import "pages/login";
+@import "pages/product-detail";
+@import "pages/order";
+@import "pages/admin-user.scss";
+
+@import "base/typography";
+
+

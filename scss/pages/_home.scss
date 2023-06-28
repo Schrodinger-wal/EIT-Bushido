@@ -1,0 +1,54 @@
+.section-cards {
+    &__title-container {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    /*width: 100%;
+    */text-align: center;
+    height: 210px;
+    margin:  30px 0px 20px 0 ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-image: url(/Assets/banners/African-titulo.png);
+    box-shadow: inset 0px 20px 13px 17px rgba(0, 0, 0, 0.2), 0px 20px 13px 17px rgba(0, 0, 0, 0.2) ;
+    -o-border-radius: 20px ;
+    -webkit-border-radius: 20px ;
+    -moz-border-radius: 20px ;
+    -ms-border-radius: 20px ;
+    border-radius: 20px ;
+    color: $color-bg-primary;
+}
+    &__header {
+        text-align: center;
+        margin-top: 10px;
+
+    }
+    &__title {
+        text-align: center;
+        top: 20px;
+    }
+/*     .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    } */
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    color: #424242;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .section-cards__title-container {
+        width: 100%;
+    }
+}
+
+/* @media screen and (min-width: 1000px) {
+    .section-cards {
+        &__header {
+            display: flex;
+        }
+    }
+}  */

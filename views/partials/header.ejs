@@ -1,0 +1,60 @@
+<header class="header__index">
+    <nav class="navbar">
+            <a  href="/" class="navbar__nav-link" >
+                <img class="navbar__logo" src="/Assets/Icons/bushido.png" alt="Logo-bushido" >
+            </a>
+            
+            <h1 class="header__h1-title">BUSHIDO</h1>
+
+            <div class="user-navbar">
+                <button class="product-search__btn-header">
+                    <div class="buscar">
+                        <input type="text" placeholder="Buscar" required />
+                        <div class="navbar-btn">
+                        <i class="fas fa-search icon"></i>
+                </button>
+                <div class="user-navbar__cart-icon-container">
+
+                    <a style="text-decoration: none;" href="/order">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+
+                </div>
+                <a href="/login">
+                <div class="user-navbar__user-avatar-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/100px-Default_pfp.svg.png" class="user-navbar__user-avatar" alt="Imagen de usuario">
+                </div>
+                </a>
+                
+        <!-- TODO: avatar de la persona logueada o nombre -->
+            </div>
+
+            
+            <input type="checkbox" class="navbar__menu-btn" id="menu-btn" title="Menu">
+            <label for="menu-btn"  class="navbar__menu-label">
+                <span class="navbar__menu-icon"></span>
+            </label>
+            
+
+
+
+            <ul class="navbar__nav-links-container" id="navbar-list">
+                <li class="navbar__nav-item">
+                    <a href="/" class="navbar__nav-link">Inicio</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/contact" class="navbar__nav-link">Contacto</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/about-us" class="navbar__nav-link">Nosotros</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="/register" class="navbar__nav-link">Registrarse</a>
+                </li>
+                <li class="navbar__nav-item" id="navbar__sign-in">
+                    <a href="/login" class="navbar__nav-link">Login</a>
+                </li>
+            </ul>
+
+    </nav>
+</header>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head', {tabTitle: 'Admin-users'}) %>
+
+<body>
+
+<!-- =========Inicio navbar================== -->
+
+    <%- include('partials/header') %>
+
+<!-- ===============Fin de navbar=============-->
+
+
+    <main>
+        <div class="admin__title-container">
+        <h1 class="section-cards__title">
+            Administrador de usuarios
+        </h1>
+        </div>
+
+        <div class="admin-product__div--product">
+            <form class="admin-product__form" id="form-user" onsubmit="addUser(event)">
+                <div class="admin-product__div--product">
+                    <label class="admin-product__label" for="userName">Usuario</label>
+                    <input class="admin-product__input" name="name" placeholder="John Doe" id="userName" type="text" required>
+                </div>
+
+                <div class="admin-product__div--product">
+                    <label  class="admin-product__label" for="emailUser">Email</label>
+                    <input class="admin-product__input" name="email" placeholder="Johndoe@gmail.com" id="emailUser" type="email" required>
+                </div>
+                
+
+                <div class="admin-product__div--product">
+                    <label for="userRole" class="admin-product__label" 
+                    >Rol</label>
+                    <select class="admin-product__input" name="role" id="userRole">
+                        <option value=""  selected></option>
+                        <option value="USER_ROLE">USER_ROLE</option>
+                        <option value="ADMIN_ROLE">ADMIN_ROLE</option>
+                    </select>
+                </div>
+
+                <div class="admin-product__div--product">
+                    <label class="admin-product__label" for="userGender">Genero</label>
+                        <select class="admin-product__input" name="gender"  id="userGender">
+                            <option value="" selected></option>
+                            <option value="">male</option>
+                            <option value="">female</option>
+                            <option value="">other</option>
+                        </select>
+                </div>
+
+                <div class="admin-product__div--product password-form">
+                    <label class="admin-product__label" for="password1">Contraseña</label><br>
+                    <input type="password" name="password1" class="admin-product__input" placeholder="**********" id="password1"  
+                    required>
+                </div>
+                <div class="admin-product__div--product password-form">
+                    <label class="admin-product__label" for="password2" >Repetir Contraseña</label><br>
+                    <input type="password" class="admin-product__input" name="password2" placeholder="**********" id="password2" required>
+                </div> 
+                
+                <button type="submit" class="admin-product__btn" id="userBtn"> Cargar </button>
+            </form>
+
+
+    <div class="admin-product__table-div">
+        <table class="admin-product__table">
+            <thead>
+                <tr>
+                    <td class="admin-product__td">Imagen</td>
+                    <td class="admin-product__td">Usuario</td>
+                    <td class="admin-product__td">Email</td>
+                    <td class="admin-product__td">Rol</td>
+                    <td class="admin-product__td">Gender</td>
+                    <td class="admin-product__td">Creado</td>
+                    <td class="admin-product__td">Acciones</td>
+                </tr>
+            </thead>
+        <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+
+
+
+<!-- ========================== Inicio Footer =============================== -->
+
+    <%- include('partials/footer') %>
+
+    <!-- ========================== Fin Footer 
+        =============================== -->
+        <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="/js/funcionality/URL.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <script src="/js/admin/is.admin.js"></script>
+    <script src="/js/funcionality/alert.js"></script>
+    <script src="/js/admin/admin-user.js"></script>
+    <script src="/js/funcionality/header.js"></script>
+
+</main>
+
+
+</body>
+</html>

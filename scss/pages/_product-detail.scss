@@ -1,0 +1,124 @@
+.product-detail {
+    display: flex;
+    background-image: url(/Assets/banners/African-titulo.png);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .product-detail__image-container {
+    margin-bottom: 20px;
+  }
+  
+  .product-detail__image {
+    width: 100%;
+    width: 350px;
+    max-width: 700px;
+    height: auto;
+  }
+  
+  .product-detail__info {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .product-detail__title {
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail__description {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+  }
+  
+  .product-detail__price {
+    color: whitesmoke;
+    font-size: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail__rating {
+    margin-bottom: 10px;
+  }
+  
+  .product-detail__rating-stars {
+    color: gold;
+  }
+  
+  .product-detail__rating-value {
+    margin-left: 5px;
+  }
+  
+  .product-detail__add-to-cart {
+    padding: 10px 20px;
+    margin: 1,5rem;
+    background-color: #af1400;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .product-detail__footer {
+    background-image: url(/Assets/banners/detail-2.png);
+    padding: 20px;
+    margin: 20px;
+    width: 70%;
+  }
+  
+  .product-detail__cant-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  .product-detail__cant {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .product-detail__cant-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-detail__cant-buttons button {
+    background-color: #af1400;
+    color: #000000;
+    border: none;
+    font-size: 24px;
+    border-radius: 20%;
+    padding: 7px 11px;
+    cursor: pointer;
+  }
+  
+  .product-detail__cant-buttons button:hover {
+    background-color: #af1400;
+  }
+  
+  .product-detail__input-Cant {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin: 0 10px;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .product-detail__info {
+      text-align: left;
+    }
+  }

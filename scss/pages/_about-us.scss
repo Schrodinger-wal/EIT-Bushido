@@ -1,0 +1,164 @@
+/* ======================================================== */
+.about-us__container-title {
+    background-image: url(/Assets/banners/African-titulo.png);
+    margin-bottom: 25px ;
+    padding: 15px;
+}
+
+.about-us__section {
+    width: 100%;
+    padding: 10px;
+    background-image: url(/Assets/banners/African-titulo.png);
+}
+
+.about-us__text-welcome {
+    font-size: 1.65rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us__row {
+  padding: 35px;
+}
+
+.about-us__text-description {
+    font-size: 1.25rem;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-us__p {
+    color: rgb(77, 51, 51);
+}
+
+.about-us__des {
+    color: $color-bg-primary;
+    font-size: 1rem;
+}
+
+.about-us__container-img .about-us__img-p:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-10%);
+  }
+
+.about-us__container-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about-us__img-p {
+  width: 70%;
+  max-height: 200px;
+  object-fit: cover;
+  transition: all 400ms ease-out
+}
+
+.about-us__h5-mail{
+  font-size: 1rem;
+  font-style: italic;
+  color: rgb(138, 158, 175);
+  padding-bottom: 10px;
+}
+
+// Card
+
+.about-us--card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+  }
+.about-us--card:hover {
+  filter: grayscale(80%);
+  }
+  
+
+.about-us__row {
+    width: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.about-us--card  {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    background-color: rgb(255, 255, 255, 0.25);
+    width: 330px;
+    transition: all 400ms ease-out;
+	  cursor: default;
+    overflow: hidden;
+
+    .about-us--card:hover {
+      transform: scale(1.5);
+  }
+
+.about-us--card__description {
+color: azure;
+font-size: 1rem;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.about-us__h5 {
+color: white;
+font-size: 1.25rem;
+text-align: center;
+}
+
+.about-us__card--title {
+color: aliceblue;
+padding: 10px;
+}
+
+.about-us--card__header {
+    text-align: center; 
+}
+
+.about-us--card__image {
+    width: 250px !important;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  .about-us--card__body {
+    padding: 20px;
+  }
+  
+  .about-us--card__title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .about-us--card__description {
+    padding: 1rem 0;
+    line-height: 1.25;
+  }
+  
+  .about-us--card__footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .about-us--card__btn-container {
+    display: inline-block;
+    align-items: flex-end;
+  }
+  
+  .about-us--card__btn {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-style: oblique;
+  }
+}
+
+
+
