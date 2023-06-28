@@ -1,2 +1,2 @@
-const URL = 'http://localhost:1400/api';
+const URL = 'https://bushido-301n.onrender.com';
 

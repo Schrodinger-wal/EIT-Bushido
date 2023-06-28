@@ -27,7 +27,7 @@ console.log("Middleware de archivos estáticos configurado correctamente.");
 app.use(express.urlencoded({extended: true}))
 
 app.use('/', viewsRoutes)
-app.use('/api',[
+app.use('/',[
     userRoutes,
     productRoutes,
     orderRoutes,
